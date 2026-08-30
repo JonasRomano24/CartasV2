@@ -1,0 +1,121 @@
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 120px 10% 50px;
+
+}
+
+
+.hero-content {
+
+    max-width: 550px;
+
+}
+
+
+.hero h1 {
+
+    font-size: 4rem;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+
+}
+
+
+.hero h1 span {
+
+    color: #FBBF24;
+
+}
+
+
+.hero p {
+
+    margin-top: 25px;
+
+    font-size: 1.2rem;
+
+    color: #CBD5E1;
+
+}
+
+
+.hero button {
+
+    margin-top: 35px;
+
+    padding: 15px 35px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #7C3AED;
+
+    color: white;
+
+    font-size: 1rem;
+
+    transition: .3s;
+
+}
+
+
+.hero button:hover {
+
+    transform: translateY(-5px);
+
+    background: #8B5CF6;
+
+}
+
+
+.hero-card {
+
+    width: 280px;
+
+    height: 420px;
+
+    perspective: 1000px;
+
+}
+
+
+.card-back {
+
+    width: 100%;
+
+    height: 100%;
+
+    border-radius: 20px;
+
+    background:
+
+        linear-gradient(145deg,
+            #1E293B,
+            #020617);
+
+
+    border: 2px solid #FBBF24;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 5rem;
+
+    box-shadow:
+        0 0 40px rgba(251, 191, 36, .25);
+
+}

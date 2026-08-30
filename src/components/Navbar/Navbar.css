@@ -1,0 +1,52 @@
+.navbar {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 25px 10%;
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    backdrop-filter: blur(15px);
+
+    background: rgba(0, 0, 0, .15);
+
+    z-index: 1000;
+}
+
+.logo {
+
+    font-family: "Cinzel", serif;
+
+    color: #FBBF24;
+
+    font-size: 2rem;
+}
+
+nav {
+
+    display: flex;
+
+    gap: 35px;
+}
+
+nav a {
+
+    color: white;
+
+    transition: .3s;
+}
+
+nav a:hover {
+
+    color: #FBBF24;
+}

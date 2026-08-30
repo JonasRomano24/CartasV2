@@ -1,0 +1,79 @@
+.reading-section {
+
+    padding: 100px 10%;
+
+}
+
+.reading-section h2 {
+
+    text-align: center;
+
+    font-size: 2.8rem;
+
+    margin-bottom: 60px;
+
+    font-family: "Cinzel", serif;
+
+    color: #FBBF24;
+
+}
+
+.reading-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+    gap: 30px;
+
+}
+
+.reading-card {
+
+    background: rgba(255, 255, 255, .05);
+
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, .1);
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+    transition: .35s;
+
+}
+
+.reading-card:hover {
+
+    transform: translateY(-10px);
+
+    border-color: #FBBF24;
+
+    box-shadow: 0 0 35px rgba(251, 191, 36, .2);
+
+}
+
+.icon {
+
+    font-size: 2.5rem;
+
+    color: #FBBF24;
+
+    margin-bottom: 20px;
+
+}
+
+.reading-card h3 {
+
+    margin-bottom: 15px;
+
+}
+
+.reading-card p {
+
+    color: #CBD5E1;
+
+    line-height: 1.6;
+
+}

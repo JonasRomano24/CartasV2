@@ -1,0 +1,192 @@
+.reading {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 100px 20px;
+
+}
+
+.reading h2 {
+
+    font-family: "Cinzel", serif;
+
+    color: #FBBF24;
+
+    font-size: 3rem;
+
+}
+
+.draw-button {
+
+    padding: 15px 35px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #7C3AED;
+
+    color: white;
+
+    font-size: 1rem;
+
+    transition: .3s;
+
+}
+
+.draw-button:hover {
+
+    transform: translateY(-4px);
+
+    background: #8B5CF6;
+
+}
+
+.meaning {
+
+    max-width: 600px;
+
+    text-align: center;
+
+}
+
+.meaning h3 {
+
+    color: #FBBF24;
+
+    margin-bottom: 20px;
+
+    font-size: 2rem;
+
+}
+
+.meaning p {
+
+    color: #CBD5E1;
+
+    font-size: 1.1rem;
+
+    line-height: 1.7;
+
+}
+
+.instruction {
+
+    color: #CBD5E1;
+
+    font-size: 1.1rem;
+
+    margin-top: 20px;
+
+    animation: pulse 2s infinite;
+
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+
+        opacity: .5;
+
+    }
+
+    50% {
+
+        opacity: 1;
+
+    }
+
+}
+
+.shuffle-message {
+    color: #FBBF24;
+    font-size: 1.3rem;
+    font-family: "Cinzel", serif;
+    animation: pulseGlow 1s infinite;
+}
+
+@keyframes pulseGlow {
+    0% {
+        opacity: .5;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.08);
+    }
+
+    100% {
+        opacity: .5;
+        transform: scale(1);
+    }
+}
+
+.drawing-card {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 40px auto;
+
+}
+
+.card-glow {
+
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(circle,
+            rgba(251, 191, 36, .45),
+            transparent 70%);
+
+    filter: blur(55px);
+
+    z-index: 0;
+
+    animation: pulse 2.5s infinite;
+
+}
+
+@keyframes pulse {
+
+    0% {
+
+        transform: scale(.85);
+        opacity: .45;
+
+    }
+
+    50% {
+
+        transform: scale(1.05);
+        opacity: 1;
+
+    }
+
+    100% {
+
+        transform: scale(.85);
+        opacity: .45;
+
+    }
+
+}
