@@ -1,17 +1,18 @@
 import ReadingPage from "../components/ReadingPage/ReadingPage";
 import TarotSpread from "../components/TarotSpread/TarotSpread";
 
-export default function Work() {
+export default function Money() {
     return (
         <ReadingPage
-            title="Lectura de Trabajo"
-            description="Analiza tu situación profesional, los desafíos que pueden aparecer y las oportunidades que tienes delante."
+            title="Lectura de Dinero"
+            description="Explora tu situación económica, tus recursos, posibles oportunidades y aquello que puede influir en tu estabilidad material."
         >
             <TarotSpread
                 positions={[
-                    "Situación actual",
+                    "Situación económica",
+                    "Ingresos",
+                    "Gastos",
                     "Obstáculo",
-                    "Oportunidad",
                     "Consejo"
                 ]}
             />

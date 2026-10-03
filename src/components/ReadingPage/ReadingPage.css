@@ -1,0 +1,24 @@
+.reading-page {
+    min-height: 100vh;
+    padding-top: 120px;
+}
+
+.reading-intro {
+    text-align: center;
+    padding: 60px 20px 20px;
+}
+
+.reading-intro h1 {
+    font-family: "Cinzel", serif;
+    color: #FBBF24;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.reading-intro p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #CBD5E1;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}

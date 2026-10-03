@@ -1,0 +1,285 @@
+.tarot-spread {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 40px 20px 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spread-progress {
+    margin-bottom: 35px;
+    color: #CBD5E1;
+    font-size: 1rem;
+}
+
+.spread-progress span {
+    color: #FBBF24;
+    font-family: "Cinzel", serif;
+}
+
+.spread-cards {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 50px 30px;
+
+    justify-items: center;
+    align-items: start;
+}
+
+.spread-slot {
+    min-height: 620px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+.spread-slot h3 {
+    min-height: 50px;
+
+    margin-bottom: 20px;
+
+    color: #FBBF24;
+
+    font-family: "Cinzel", serif;
+
+    font-size: 1.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CARTA OCULTA */
+
+.hidden-card {
+    width: 280px;
+    height: 450px;
+
+    border-radius: 24px;
+
+    cursor: default;
+
+    transition: transform .3s;
+}
+
+.hidden-card-border {
+    width: 100%;
+    height: 100%;
+
+    padding: 12px;
+
+    border-radius: 24px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #FDE68A,
+            #FBBF24,
+            #B45309
+        );
+
+    box-shadow:
+        0 0 30px rgba(251, 191, 36, .18);
+}
+
+.hidden-card-inner {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #334155,
+            #0F172A 65%,
+            #020617
+        );
+
+    border: 2px solid rgba(255, 255, 255, .08);
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.hidden-card-inner::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 18px;
+
+    border: 1px solid rgba(251, 191, 36, .4);
+
+    border-radius: 12px;
+}
+
+.hidden-card-inner::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 35px;
+
+    border: 1px solid rgba(251, 191, 36, .18);
+
+    border-radius: 8px;
+}
+
+.hidden-card-inner span {
+    color: #FBBF24;
+
+    font-size: 5rem;
+
+    text-shadow:
+        0 0 20px rgba(251, 191, 36, .6);
+
+    z-index: 1;
+}
+
+/* SIGNIFICADO */
+
+.spread-meaning {
+    width: 280px;
+
+    margin-top: 20px;
+}
+
+.spread-meaning h4 {
+    color: #FBBF24;
+
+    font-size: 1.2rem;
+
+    margin-bottom: 10px;
+}
+
+.spread-meaning p {
+    color: #CBD5E1;
+
+    line-height: 1.6;
+}
+
+/* INSTRUCCIÓN */
+
+.spread-instruction {
+    margin-top: 35px;
+
+    text-align: center;
+
+    color: #CBD5E1;
+
+    font-size: 1.05rem;
+}
+
+.spread-instruction strong {
+    display: block;
+
+    margin-top: 8px;
+
+    color: #FBBF24;
+
+    font-family: "Cinzel", serif;
+
+    font-size: 1.3rem;
+}
+
+/* BARAJANDO */
+
+.shuffle-message {
+    margin-top: 30px;
+
+    color: #FBBF24;
+
+    font-size: 1.3rem;
+
+    font-family: "Cinzel", serif;
+
+    animation: spreadPulse 1s infinite;
+}
+
+@keyframes spreadPulse {
+
+    0% {
+        opacity: .5;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+
+    100% {
+        opacity: .5;
+        transform: scale(1);
+    }
+}
+
+/* ANIMACIÓN DE EXTRACCIÓN */
+
+.spread-drawing-card {
+    margin-top: 30px;
+}
+
+/* FINAL */
+
+.spread-complete {
+    margin-top: 30px;
+
+    text-align: center;
+}
+
+.spread-complete h2 {
+    color: #FBBF24;
+
+    font-family: "Cinzel", serif;
+
+    margin-bottom: 15px;
+}
+
+.spread-complete p {
+    color: #CBD5E1;
+
+    margin-bottom: 25px;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .spread-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .spread-slot {
+        min-height: auto;
+
+        margin-bottom: 30px;
+    }
+
+    .hidden-card {
+        width: 250px;
+        height: 400px;
+    }
+
+    .spread-meaning {
+        width: 250px;
+    }
+
+}
